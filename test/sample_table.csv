@@ -1,0 +1,21 @@
+id,name,age,department,salary,start_date
+1,John Doe,34,Engineering,90000,2020-01-15
+2,Jane Smith,29,Marketing,75000,2019-03-22
+3,Emily Davis,41,HR,82000,2018-07-10
+4,Michael Brown,38,Finance,95000,2017-11-05
+5,Linda Wilson,27,Engineering,72000,2021-06-30
+6,Chris Johnson,45,Marketing,88000,2016-09-18
+7,Patricia Lee,32,HR,79000,2020-02-25
+8,Robert Miller,36,Finance,91000,2019-12-12
+9,Barbara Garcia,28,Engineering,73000,2022-04-01
+10,James Martinez,40,Marketing,87000,2015-08-20
+11,Jennifer Rodriguez,33,HR,80000,2018-10-14
+12,William Hernandez,39,Finance,94000,2017-03-03
+13,Elizabeth Clark,26,Engineering,71000,2021-09-17
+14,David Lewis,44,Marketing,89000,2016-05-29
+15,Susan Walker,31,HR,78000,2019-01-08
+16,Joseph Hall,37,Finance,92000,2020-07-23
+17,Karen Allen,30,Engineering,76000,2022-02-11
+18,Matthew Young,42,Marketing,86000,2015-12-27
+19,Nancy King,35,HR,81000,2018-05-19
+20,Daniel Wright,43,Finance,93000,2016-08-15

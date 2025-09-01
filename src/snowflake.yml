@@ -1,0 +1,7 @@
+definition_version: 1
+entities:
+  my_streamlit:
+    query_warehouse: STREAMLIT_APP_WH
+    artifacts:
+      - main.py
+      - environment.yml
