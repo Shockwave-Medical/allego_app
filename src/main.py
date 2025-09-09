@@ -10,8 +10,10 @@ session = get_active_session()
 
 def get_column_config_generic(table_df):
 	return {
-		col: st.column_config.Column(label=col.replace('_', ' ').title())
-		for col in table_df.columns
+		col: st.column_config.Column(
+			label=col.replace('_', ' ').title(),
+			disabled=(col == "creation_date")
+		) for col in table_df.columns
 	}
 
 def create_filter_definitions(filtered_fields):
