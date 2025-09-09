@@ -405,7 +405,7 @@ def generate_editor(
             session.table(f"{DATABASE}.{schema_name}.{main_table_address}"), 
             df.loc[deleted_indices])
         ):
-            # st.rerun()
+            st.rerun()
             time.sleep(1)
 
     def delete_rows_in_snowflake(table, deleted_row_df: pd.DataFrame, key_columns=key_columns):
