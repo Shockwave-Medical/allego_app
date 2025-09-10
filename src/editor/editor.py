@@ -245,6 +245,8 @@ def generate_editor(
 
     # merging the changes to original table
     def submit_edited_data_to_table(dataset, updated_dataset):
+        st.write("Updating records in the database...")
+        st.write(updated_dataset.to_pandas())
         # st.warning("Attempting to update dataset")
         dataset.merge(
             source=updated_dataset,
