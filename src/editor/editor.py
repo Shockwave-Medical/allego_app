@@ -80,6 +80,9 @@ def generate_editor(
         updated_indexes = st.session_state.get(DATA_EDITOR_KEY).get("edited_rows", []).keys()
         added_indexes = st.session_state.get(DATA_EDITOR_KEY).get("added_rows", [])
 
+        ## TODO: check if the edited row has changes in key_columns, if so treat it as a new row
+
+
         if len(added_indexes) > 0:
             close_add_row_and_submit(pd.DataFrame(st.session_state.get(DATA_EDITOR_KEY).get("added_rows", [])))
             return
@@ -245,8 +248,6 @@ def generate_editor(
 
     # merging the changes to original table
     def submit_edited_data_to_table(dataset, updated_dataset):
-        st.write("Updating records in the database...")
-        st.write(updated_dataset.to_pandas())
         # st.warning("Attempting to update dataset")
         dataset.merge(
             source=updated_dataset,
